@@ -1,18 +1,20 @@
-# Centralizado
+# Resumo do Assunto sobre Versionamento de Código
+
+## Centralizado
 
 - Servidor contém todo o histórico
 - Qualquer problema no servidor impacta no projeto
 - Padrão por muitos anos
 
 
-# Distribuído
+## Distribuído
 
 - Toda máquina possui uma cópia do repositório
 - Mudanças são realizadas localmente
 - Não depende de uma única máquina
 
 
-# Características do Git
+## Características do Git
 
 - Ações locais: navegação de histórico, criação de branch
 - Integridade: uma vez que um arquivo é adicionado, todo seu histórico é guardado, mesmo a remoção de arquivo é feito através de uma adição de versão onde diz que o arquivo foi removido
@@ -20,7 +22,7 @@
 - Independência da complexidade do projeto: eficiência para pequenos e grandes projetos, complexidade de uso permanece a mesma
 
 
-# Quatro Estados dos Arquivos no Git
+## Quatro Estados dos Arquivos no Git
 
 - Untraked
 - Unmodified
@@ -28,7 +30,7 @@
 - Staged
 
 
-# Comandos Básicos do Git
+## Comandos Básicos do Git
 
 - git rm --cached -r . > remove todos os arquivos do stage
 
@@ -91,14 +93,14 @@
 - git stash branch nomedabranchnova > cria uma nova branch aplicando as mudanças salvas
 
 
-# Comandos Intermediários e Avançados do Git
+## Comandos Intermediários e Avançados do Git
 
 - git reset --hard iddocommit / git reset --hard iddocommit~1 / git reset --mixed iddocommit~1 / git reset --soft iddocommit~1 > comandos para apagar branchs
 
 - git push --force / git push --force-with-lease > força o envio das informações para o repositório remoto e sobreescreve tudo
 
 
-# GitHub
+## GitHub
 
 - Issues
     mudanção que poderão ser feita e que podemos apontar nos repositórios que o dono ou outras pessoas verão
@@ -109,7 +111,7 @@
 - Milestones
     um marco a atingir, com descrição e data de conclusão
 
-# Chave SSH
+## Chave SSH
         - git clone linksshdorepositorio nomedapasta > exemplo
         - eval $(ssh-agent) > inicia um agente
         - ssh-add caminhododiretoriodachave
